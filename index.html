@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Quest - เรียนรู้ประเภทห้องสมุดสำหรับ ม.1</title>
+    <meta name="description" content="สื่อการเรียนรู้รายวิชาการใช้ห้องสมุดเบื้องต้น เรื่อง ประเภทของห้องสมุด สำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 1 พร้อมมินิเกมและแบบทดสอบวัดผลตาม Bloom's Taxonomy">
+    <meta name="keywords" content="ประเภทห้องสมุด, การใช้ห้องสมุดเบื้องต้น, ห้องสมุดโรงเรียน, ห้องสมุดประชาชน, หอสมุดแห่งชาติ, ห้องสมุดเฉพาะ, ห้องสมุดมหาวิทยาลัย, มัธยมศึกษาปีที่ 1">
+    <meta name="author" content="dreamiieboon-tech">
+    <!-- Google Fonts: Kanit and Sarabun -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fa-solid fa-book-open-reader logo-icon"></i>
+                <span class="logo-text">Library<span>Quest</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="#learn" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> บทเรียน 5 ห้องสมุด</a></li>
+                <li><a href="#quest" class="nav-link"><i class="fa-solid fa-gamepad"></i> ภารกิจผู้พิทักษ์</a></li>
+                <li><a href="#quiz-section" class="nav-link"><i class="fa-solid fa-clipboard-question"></i> แบบทดสอบ</a></li>
+                <li><a href="#certificate" class="nav-link" id="nav-cert-link"><i class="fa-solid fa-award"></i> รับเกียรติบัตร</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-tag">วิชาการใช้ห้องสมุดเบื้องต้น</span>
+                    <h1 class="hero-title">ดินแดนแห่งความรู้!<br>ผจญภัยกับ <span>ประเภทห้องสมุด</span></h1>
+                    <p class="hero-description">
+                        ยินดีต้อนรับน้อง ๆ ชั้นมัธยมศึกษาปีที่ 1 เข้าสู่โลกแห่งการเรียนรู้ประเภทห้องสมุดทั้ง 5 ประเภท มาเรียนรู้เรื่องสนุก ๆ สนทนากับภารกิจผู้พิทักษ์ห้องสมุด และท้าทายสมองด้วยแบบทดสอบเพื่อรับเกียรติบัตรสุดเท่ไปครองกันเลย!
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#learn" class="btn btn-primary btn-lg"><i class="fa-solid fa-play"></i> เริ่มการเรียนรู้</a>
+                        <a href="#quest" class="btn btn-outline btn-lg"><i class="fa-solid fa-gamepad"></i> เล่นเกมภารกิจ</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero_illustration.png" alt="Library Quest Adventure Illustration" class="hero-image">
+                    <div class="floating-badge badge-1">
+                        <i class="fa-solid fa-book"></i>
+                        <span>ความรู้จัดเต็ม</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-solid fa-award"></i>
+                        <span>มีเกียรติบัตร</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Learning Hub (เนื้อหาบทเรียน 5 ประเภท) -->
+        <section id="learn" class="learn-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ห้องเรียนอัจฉริยะ</span>
+                    <h2 class="section-title">รู้จักกับห้องสมุดทั้ง 5 ประเภท</h2>
+                    <p class="section-desc">ห้องสมุดแต่ละประเภทมีหน้าที่และความสำคัญแตกต่างกันออกไป มาศึกษาทีละประเภทกันเลยครับน้อง ๆ</p>
+                </div>
+
+                <!-- Tab Controller -->
+                <div class="tabs-control">
+                    <button class="tab-btn active" data-tab="school" id="tab-school">
+                        <i class="fa-solid fa-school tab-icon"></i>
+                        <span>1. ห้องสมุดโรงเรียน</span>
+                    </button>
+                    <button class="tab-btn" data-tab="university" id="tab-university">
+                        <i class="fa-solid fa-university tab-icon"></i>
+                        <span>2. ห้องสมุดมหาวิทยาลัย</span>
+                    </button>
+                    <button class="tab-btn" data-tab="special" id="tab-special">
+                        <i class="fa-solid fa-microscope tab-icon"></i>
+                        <span>3. ห้องสมุดเฉพาะ</span>
+                    </button>
+                    <button class="tab-btn" data-tab="public" id="tab-public">
+                        <i class="fa-solid fa-users-line tab-icon"></i>
+                        <span>4. ห้องสมุดประชาชน</span>
+                    </button>
+                    <button class="tab-btn" data-tab="national" id="tab-national">
+                        <i class="fa-solid fa-landmark tab-icon"></i>
+                        <span>5. หอสมุดแห่งชาติ</span>
+                    </button>
+                </div>
+
+                <!-- Tab Content Area -->
+                <div class="tab-content-wrapper" id="tab-content-area">
+                    <!-- JavaScript will dynamically render content here for animations and flexibility. We will also include a fallback for SEO -->
+                    <div class="loading-spinner">
+                        <i class="fa-solid fa-spinner fa-spin"></i> กำลังโหลดบทเรียน...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Library Quest Mini-Game (มินิเกมจำลองสถานการณ์) -->
+        <section id="quest" class="quest-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">กิจกรรมท้าทาย</span>
+                    <h2 class="section-title">เกมภารกิจผู้พิทักษ์ห้องสมุด</h2>
+                    <p class="section-desc">มาทดสอบไหวพริบของน้อง ๆ กัน! อ่านความต้องการของผู้ใช้ห้องสมุดด้านล่าง แล้วช่วยส่งพวกเขาไปยังห้องสมุดที่ถูกต้องทีนะ!</p>
+                </div>
+
+                <div class="game-card">
+                    <!-- Game Intro Screen -->
+                    <div id="game-intro" class="game-screen active">
+                        <div class="game-intro-icon">
+                            <i class="fa-solid fa-shield-halved fa-bounce"></i>
+                        </div>
+                        <h3>คุณพร้อมเป็น "ผู้พิทักษ์ห้องสมุด" แล้วหรือยัง?</h3>
+                        <p>ภารกิจของน้อง ๆ คืออ่านสถานการณ์สั้น ๆ 5 ข้อ แล้วเลือกประเภทห้องสมุดที่ตอบโจทย์ความต้องการของคนในสถานการณ์นั้นให้ถูกต้องที่สุด หากตอบถูกจะได้ดาวสะสมและคะแนนปลดล็อกแบบทดสอบ!</p>
+                        <button class="btn btn-primary btn-lg" id="start-game-btn"><i class="fa-solid fa-bolt"></i> เริ่มปฏิบัติภารกิจ!</button>
+                    </div>
+
+                    <!-- Game Play Screen -->
+                    <div id="game-play" class="game-screen">
+                        <div class="game-header">
+                            <div class="game-progress">
+                                <span>ภารกิจที่: <strong id="game-curr-step">1</strong>/5</span>
+                                <div class="progress-bar-outer">
+                                    <div class="progress-bar-inner" id="game-bar-inner" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                            <div class="game-score">
+                                <i class="fa-solid fa-star score-star"></i>
+                                <span>คะแนนสะสม: <strong id="game-stars">0</strong> ดาว</span>
+                            </div>
+                        </div>
+
+                        <div class="game-body">
+                            <!-- Scenario Card -->
+                            <div class="scenario-card">
+                                <div class="scenario-avatar">
+                                    <i class="fa-solid fa-user-tie" id="scenario-icon"></i>
+                                </div>
+                                <div class="scenario-text-wrapper">
+                                    <h4 id="scenario-name">คุณลุงประเสริฐ</h4>
+                                    <p id="scenario-desc">"ลุงอยากพาลูก ๆ ไปนั่งอ่านหนังสือพิมพ์ ทานน้ำชากาแฟ และฟังนิทานของชุมชนในวันหยุดเสาร์-อาทิตย์นี้จัง ควรไปห้องสมุดไหนดีนะ?"</p>
+                                </div>
+                            </div>
+
+                            <!-- Choice Grid -->
+                            <div class="game-choices-grid">
+                                <button class="game-choice-btn" data-type="school">
+                                    <i class="fa-solid fa-school"></i>
+                                    <span>ห้องสมุดโรงเรียน</span>
+                                </button>
+                                <button class="game-choice-btn" data-type="university">
+                                    <i class="fa-solid fa-university"></i>
+                                    <span>ห้องสมุดมหาวิทยาลัย</span>
+                                </button>
+                                <button class="game-choice-btn" data-type="special">
+                                    <i class="fa-solid fa-microscope"></i>
+                                    <span>ห้องสมุดเฉพาะ</span>
+                                </button>
+                                <button class="game-choice-btn" data-type="public">
+                                    <i class="fa-solid fa-users-line"></i>
+                                    <span>ห้องสมุดประชาชน</span>
+                                </button>
+                                <button class="game-choice-btn" data-type="national">
+                                    <i class="fa-solid fa-landmark"></i>
+                                    <span>หอสมุดแห่งชาติ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Feedback area after clicking -->
+                        <div class="game-feedback hidden" id="game-feedback">
+                            <div class="feedback-icon" id="feedback-icon-div">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="feedback-text">
+                                <h4 id="feedback-title">ถูกต้องแล้วเก่งมาก!</h4>
+                                <p id="feedback-desc">เพราะห้องสมุดประชาชนเปิดให้คนทุกเพศทุกวัยเข้าใช้งาน และมีกิจกรรมชุมชนดี ๆ เสมอ</p>
+                            </div>
+                            <button class="btn btn-primary" id="game-next-btn">ถัดไป <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Game Finish Screen -->
+                    <div id="game-finish" class="game-screen">
+                        <div class="finish-badge">
+                            <i class="fa-solid fa-trophy text-warning"></i>
+                        </div>
+                        <h3>ภารกิจผู้พิทักษ์เสร็จสมบูรณ์!</h3>
+                        <p class="finish-text">น้อง ๆ ทำหน้าที่แนะนำประเภทห้องสมุดได้ยอดเยี่ยมมาก!</p>
+                        <div class="finish-stats">
+                            <div class="stat-box">
+                                <span class="stat-label">ตอบถูกทั้งหมด</span>
+                                <span class="stat-value"><strong id="game-correct-count">0</strong>/5 ข้อ</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">ดาวที่ได้รับ</span>
+                                <span class="stat-value"><strong id="game-final-stars">0</strong> ⭐</span>
+                            </div>
+                        </div>
+                        <p class="finish-next-tip">พร้อมไปทำแบบทดสอบวัดระดับสมองตามกรอบ Bloom's Taxonomy เพื่อรับเกียรติบัตรผ่านเกณฑ์หรือยัง?</p>
+                        <div class="finish-actions">
+                            <button class="btn btn-secondary" id="replay-game-btn"><i class="fa-solid fa-rotate-left"></i> เล่นเกมใหม่อีกครั้ง</button>
+                            <a href="#quiz-section" class="btn btn-primary"><i class="fa-solid fa-chevron-down"></i> ไปทำแบบทดสอบกันเลย!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Quiz (แบบทดสอบวัดความรู้ Bloom's Taxonomy) -->
+        <section id="quiz-section" class="quiz-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ประเมินผลการเรียนรู้</span>
+                    <h2 class="section-title">แบบทดสอบวัดความรู้ 10 ข้อ</h2>
+                    <p class="section-desc">แบบทดสอบนี้จัดทำขึ้นตามกรอบพฤติกรรมการเรียนรู้ของ **Bloom's Taxonomy** ตั้งแต่ระดับความจำไปจนถึงขั้นสร้างสรรค์ ลองทำข้อสอบดูนะน้อง ๆ !</p>
+                </div>
+
+                <!-- Quiz Register Screen -->
+                <div class="quiz-container" id="quiz-reg-container">
+                    <div class="quiz-welcome-card">
+                        <i class="fa-solid fa-signature welcome-icon"></i>
+                        <h3>เตรียมตัวทำแบบทดสอบ</h3>
+                        <p>กรุณากรอกชื่อและนามสกุลจริงของน้อง ๆ เพื่อใช้สำหรับการพิมพ์เกียรติบัตรมอบให้หลังจากผ่านเกณฑ์ (ต้องได้คะแนนตั้งแต่ 6 ข้อขึ้นไป)</p>
+                        <div class="input-group">
+                            <label for="student-name">ชื่อ - นามสกุล ของน้อง ๆ:</label>
+                            <input type="text" id="student-name" placeholder="ตัวอย่าง: เด็กชายสมาธิ ตั้งใจเรียน" maxlength="50">
+                            <p class="input-error hidden" id="name-error">กรุณากรอกชื่อ-นามสกุลก่อนเข้าทำแบบทดสอบนะครับ</p>
+                        </div>
+                        <button class="btn btn-primary btn-lg" id="start-quiz-btn">เริ่มทำแบบทดสอบ <i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                </div>
+
+                <!-- Quiz Active Play Screen -->
+                <div class="quiz-container hidden" id="quiz-play-container">
+                    <div class="quiz-card">
+                        <div class="quiz-card-header">
+                            <div class="quiz-progress-text">
+                                ข้อที่ <span id="quiz-curr-num">1</span> จากทั้งหมด 10 ข้อ
+                            </div>
+                            <div class="quiz-bloom-badge" id="quiz-bloom-level">
+                                ระดับ: Remembering (จำ)
+                            </div>
+                        </div>
+
+                        <!-- Quiz Progress Bar -->
+                        <div class="quiz-progress-bar-outer">
+                            <div class="quiz-progress-bar-inner" id="quiz-bar-inner" style="width: 10%;"></div>
+                        </div>
+
+                        <!-- Question Area -->
+                        <div class="quiz-question-box">
+                            <h3 id="quiz-question-text">คำถามจะปรากฏที่นี่...</h3>
+                        </div>
+
+                        <!-- Options List -->
+                        <div class="quiz-options-list" id="quiz-options-container">
+                            <!-- Options will be dynamically rendered in JavaScript -->
+                        </div>
+
+                        <!-- Answer Feedback Card -->
+                        <div class="quiz-explain-card hidden" id="quiz-explain-card">
+                            <h4 id="explain-title"><i class="fa-solid fa-circle-info"></i> เฉลยและคำอธิบาย:</h4>
+                            <p id="explain-text">คำอธิบายจะถูกแสดงหลังจากนักเรียนตอบคำถาม เพื่อให้นักเรียนเข้าใจเหตุผลและสามารถเรียนรู้ข้อผิดพลาดได้ทันที</p>
+                            <button class="btn btn-primary" id="quiz-next-btn">ข้อถัดไป <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Result Screen -->
+                <div class="quiz-container hidden" id="quiz-result-container">
+                    <div class="quiz-result-card">
+                        <div class="result-icon-div" id="result-icon-div">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h2 id="result-greeting">ยินดีด้วยอย่างยิ่ง!</h2>
+                        <p id="result-text">น้อง ๆ สอบผ่านการทดสอบเรื่องประเภทห้องสมุดแล้วครับ!</p>
+                        
+                        <div class="result-score-display">
+                            <div class="score-circle">
+                                <span id="quiz-final-score">8</span>
+                                <span class="score-max">/10</span>
+                            </div>
+                            <p>คะแนนที่สอบได้</p>
+                        </div>
+
+                        <div class="score-details-list">
+                            <div class="detail-item">
+                                <span class="detail-label">ชื่อผู้สอบ:</span>
+                                <span class="detail-val" id="result-student-name">เด็กชายสมาธิ ตั้งใจเรียน</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">สถานะการทดสอบ:</span>
+                                <span class="detail-val" id="result-status">ผ่านการทดสอบ (60% ขึ้นไป)</span>
+                            </div>
+                        </div>
+
+                        <div class="result-actions">
+                            <button class="btn btn-secondary" id="restart-quiz-btn"><i class="fa-solid fa-rotate-left"></i> ทำแบบทดสอบใหม่</button>
+                            <a href="#certificate" class="btn btn-primary" id="goto-cert-btn"><i class="fa-solid fa-award"></i> ไปรับเกียรติบัตร</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4: E-Certificate (เกียรติบัตรออนไลน์ HTML5 Canvas) -->
+        <section id="certificate" class="cert-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ความสำเร็จของน้อง ๆ</span>
+                    <h2 class="section-title">เกเกียรติบัตรอิเล็กทรอนิกส์</h2>
+                    <p class="section-desc">ดาวน์โหลดเกเกียรติบัตรเพื่อแสดงว่าน้อง ๆ ได้สำเร็จการเรียนรู้เรื่องประเภทห้องสมุดระดับ ม.1 เรียบร้อยแล้ว!</p>
+                </div>
+
+                <!-- Certificate Viewer Container -->
+                <div class="cert-container">
+                    <!-- Locked view when user hasn't passed the quiz yet -->
+                    <div class="cert-locked-card" id="cert-locked-view">
+                        <i class="fa-solid fa-lock cert-lock-icon"></i>
+                        <h3>ระบบเกียรติบัตรยังไม่เปิดใช้งาน</h3>
+                        <p>น้อง ๆ จะต้องผ่านแบบทดสอบวัดความรู้ประเภทห้องสมุดให้ได้ **คะแนนตั้งแต่ 6 ข้อขึ้นไป (60%)** ระบบจึงจะเปิดและวาดเกเกียรติบัตรใบเฉพาะตัวที่มีชื่อน้อง ๆ ให้ดาวน์โหลดครับ</p>
+                        <a href="#quiz-section" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> ไปทำแบบทดสอบกันเลย!</a>
+                    </div>
+
+                    <!-- Unlocked view -->
+                    <div class="cert-unlocked-card hidden" id="cert-unlocked-view">
+                        <p class="cert-tip-info"><i class="fa-solid fa-circle-check"></i> ยินดีด้วยครับ! ด้านล่างนี้คือเกเกียรติบัตรของน้อง ตรวจดูความถูกต้องแล้วดาวน์โหลดได้เลยครับ</p>
+                        
+                        <!-- Canvas element where the cert is drawn -->
+                        <div class="canvas-wrapper">
+                            <canvas id="cert-canvas" width="800" height="565"></canvas>
+                        </div>
+
+                        <div class="cert-actions">
+                            <button class="btn btn-primary btn-lg" id="download-cert-btn"><i class="fa-solid fa-download"></i> ดาวน์โหลดเกเกียรติบัตร (รูปภาพ PNG)</button>
+                            <button class="btn btn-outline btn-lg" id="print-cert-btn"><i class="fa-solid fa-print"></i> พิมพ์เกเกียรติบัตร (PDF/เครื่องพิมพ์)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>Library<span>Quest</span></span>
+                    </div>
+                    <p>สื่อการเรียนการสอนรายวิชาการใช้ห้องสมุดเบื้องต้น เรื่อง ประเภทของห้องสมุด สำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 1 จัดทำขึ้นเป็นสื่อการเรียนรู้เชิงปฏิสัมพันธ์ที่ทันสมัยและเข้าใจง่าย</p>
+                </div>
+                <div class="footer-links">
+                    <h4>ลิงก์ด่วนบทเรียน</h4>
+                    <ul>
+                        <li><a href="#hero">หน้าแรก</a></li>
+                        <li><a href="#learn">รู้จักห้องสมุด 5 ประเภท</a></li>
+                        <li><a href="#quest">มินิเกมผู้พิทักษ์ห้องสมุด</a></li>
+                        <li><a href="#quiz-section">แบบทดสอบ Bloom's Taxonomy</a></li>
+                        <li><a href="#certificate">รับเกียรติบัตรออนไลน์</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>ผู้พัฒนา</h4>
+                    <p><strong>dreamiieboon-tech</strong></p>
+                    <p>ดูโค้ดและเผยแพร่ผลงานที่:</p>
+                    <a href="https://github.com/dreamiieboon-tech/dreamiieboon-tech.github.io.git" target="_blank" class="footer-github-link">
+                        <i class="fa-brands fa-github"></i> dreamiieboon-tech.github.io
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Library Quest. พัฒนาและออกแบบเพื่อการศึกษาโดย dreamiieboon-tech. สงวนลิขสิทธิ์</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
